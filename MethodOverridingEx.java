@@ -44,10 +44,6 @@ class ParttimeEmployee extends Employee{
 
 }
 
-
-
-
-
 class TemporaryEmployee extends Employee{
     double daysWorked;
     double dailyRate;
