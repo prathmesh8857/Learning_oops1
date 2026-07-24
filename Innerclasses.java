@@ -62,5 +62,5 @@ public class Innerclasses {
 //members of inner class can access all outer class members including private veriable and protected veriable
 
 //Type of inner class//
-//
-//local inner class:- is a class that is define inside a method
+//1)member in a class:-
+//2)local inner class:- is a class that is define inside a method
