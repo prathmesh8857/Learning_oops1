@@ -35,8 +35,60 @@ public class SinglyLinlListEX {
         temp.next = newNode;
     }
 
+    //Step3: Insert at Begining
+
+    public void insertAtBeginning(int data){
+        Node newNode = new Node(data);
+
+        newNode.next = head;
+        head = newNode;
+    }
+
+    //Step4: Delete by value
+
+    public void delete(int key){
+
+        //If list is empty
+        if(head == null){
+            System.out.println("List is empty");
+            return;
+
+        }
+        // If head need to delete
+        if(head.data == key){
+            head = head.next;
+            return;
+
+        }
+        Node temp = head;
+
+        while (temp.next != null && temp.next.data != key){
+            temp = temp.next;
+        }
+        if(temp.next == null){
+            System.out.println("Values not found");
+        }else{
+            temp.next = temp.next.next;
+        }
+
+    }
+    //step5: Display
+    public void display(){
+        Node temp = head;
+        while(temp != null){
+            System.out.println(temp.data + " -> ");
+            temp = temp.next;
+        }
+        System.out.println("null");
+        
+
+    }
+    //step6: main mathod
+
 
     public static void main(String[] args) {
-        
+        SinglyLinlListEX list = new SinglyLinlListEX();
+        list.insertAtEnd(10);
+        list.display();
     }
 }
