@@ -104,3 +104,23 @@ public class DoublyLinkListEx {
     }
 }
 
+
+//when to use linklist?
+//->frequently insert delete operation
+//->detasize change frequently
+//->no heavy index is needed
+
+// difference batn arraylist and linklist?
+// ArrayList vs LinkedList (Simple Explanation)
+// Feature	ArrayList	LinkedList
+// Storage	Stores elements in a dynamic array	Stores elements as nodes connected by links
+// Access by index	✅ Very fast	❌ Slow
+// Insert in middle	❌ Slow	✅ Fast
+// Delete in middle	❌ Slow	✅ Fast
+// Memory	Uses less memory	Uses more memory (stores links too)
+// Best for	Reading/searching data	Frequent insertions and deletions
+
+//
+// litcode question no 21 solve
+
+
