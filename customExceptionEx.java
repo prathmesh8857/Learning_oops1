@@ -23,7 +23,7 @@ public class customExceptionEx {
         BankAccount account = new BankAccount();
 
         try{
-            account.withdraw(40000);
+            account.withdraw(500);
 
         }catch(InsufficientBalanceException e){
             System.out.println("error: "+e.getMessage());
